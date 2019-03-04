@@ -1,11 +1,17 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
+import logo from '../images/sa.png'
 
 const Header = styled.header`
   background: ${props => props.theme.colors.base};
   width: 100%;
   padding: 1.5em 0;
+
+  img {
+    max-width: 300px;
+    margin: 0 auto;
+  }
 `
 const Nav = styled.nav`
   width: 100%;
@@ -47,6 +53,7 @@ const activeLinkStyle = {
 const Menu = () => {
   return (
     <Header>
+      <img src={logo} />
       <Nav>
         <ul>
           <li>
